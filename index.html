@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,500,600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Просто Банк | Когда Банк Максимально Понятен</title>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <img
+                    src="img/logo.png"
+                    alt="Лого Просто Банк"
+                    class="nav__logo"
+                    id="logo"
+                />
+                <div class="nav__text">Просто Банк</div>
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#section--1">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#section--2">Операции</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#section--3">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            class="nav__link nav__link--btn btn--show-modal-window"
+                            href="#"
+                            >Открыть счёт</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__title">
+                <h1>
+                    Когда
+                    <!-- Эффект выделения фона -->
+                    <span class="highlight">банк</span>
+                    максимально<br />
+                    <span class="highlight">понятен</span>
+                </h1>
+                <h4>Более простой банковский опыт для упрощения жизни.</h4>
+                <button class="btn--text btn--scroll-to">
+                    Узнать больше &DownArrow;
+                </button>
+                <img
+                    src="img/bank.png"
+                    class="header__img"
+                    alt="Изображения Просто Банк"
+                />
+            </div>
+        </header>
+
+        <section class="section" id="section--1">
+            <div class="section__title">
+                <h2 class="section__description">Услуги</h2>
+                <h3 class="section__header">
+                    Все необходимое в современном банке.
+                </h3>
+            </div>
+
+            <div class="services">
+                <img
+                    src="img/stock-exchange-lazy.jpg"
+                    data-src="img/stock-exchange.jpg"
+                    alt="Числа на экране"
+                    class="services__img lazy-img"
+                />
+                <div class="services__feature">
+                    <div class="services__icon">
+                        <svg>
+                            <use xlink:href="img/icons.svg#icon-monitor"></use>
+                        </svg>
+                    </div>
+                    <h5 class="services__header">100% цифровой банк</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla et feugiat orci. Integer ut mauris nec sapien
+                        viverra condimentum sed at eros. Donec vitae odio non
+                        mauris convallis congue. Quisque id rhoncus elit. Nam
+                        accumsan facilisis felis.
+                    </p>
+                </div>
+
+                <div class="services__feature">
+                    <div class="services__icon">
+                        <svg>
+                            <use
+                                xlink:href="img/icons.svg#icon-trending-up"
+                            ></use>
+                        </svg>
+                    </div>
+                    <h5 class="services__header">
+                        Наблюдай за ростом твоих денег
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla et feugiat orci. Integer ut mauris nec sapien
+                        viverra condimentum sed at eros. Donec vitae odio non
+                        mauris convallis congue. Quisque id rhoncus elit. Nam
+                        accumsan facilisis felis.
+                    </p>
+                </div>
+                <img
+                    src="img/business-lazy.jpg"
+                    data-src="img/business.jpg"
+                    alt="Возрастающий тренд на графике"
+                    class="services__img lazy-img"
+                />
+
+                <img
+                    src="img/payment-lazy.jpg"
+                    data-src="img/payment.jpg"
+                    alt="Кредитная карта"
+                    class="services__img lazy-img"
+                />
+                <div class="services__feature">
+                    <div class="services__icon">
+                        <svg>
+                            <use
+                                xlink:href="img/icons.svg#icon-credit-card"
+                            ></use>
+                        </svg>
+                    </div>
+                    <h5 class="services__header">
+                        Бесплатная дебетовая карта включена
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla et feugiat orci. Integer ut mauris nec sapien
+                        viverra condimentum sed at eros. Donec vitae odio non
+                        mauris convallis congue. Quisque id rhoncus elit. Nam
+                        accumsan facilisis felis.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section--2">
+            <div class="section__title">
+                <h2 class="section__description">Операции</h2>
+                <h3 class="section__header">
+                    Все максимально просто, но не проще.
+                </h3>
+            </div>
+
+            <div class="operations">
+                <div class="operations__tab-container">
+                    <button
+                        class="btn operations__tab operations__tab--1 operations__tab--active"
+                        data-tab="1"
+                    >
+                        <span>🚀</span>
+                        Мгновенные переводы
+                    </button>
+                    <button
+                        class="btn operations__tab operations__tab--2"
+                        data-tab="2"
+                    >
+                        <span>🚀</span>
+                        Мгновенные Займы
+                    </button>
+                    <button
+                        class="btn operations__tab operations__tab--3"
+                        data-tab="3"
+                    >
+                        <span>🚀</span>
+                        Мгновенное Закрытие
+                    </button>
+                </div>
+                <div
+                    class="operations__content operations__content--1 operations__content--active"
+                >
+                    <div class="operations__icon operations__icon--1">
+                        <svg>
+                            <use xlink:href="img/icons.svg#icon-upload"></use>
+                        </svg>
+                    </div>
+                    <h5 class="operations__header">
+                        Мгновенно переводите деньги кому угодно!
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla et feugiat orci. Integer ut mauris nec sapien
+                        viverra condimentum sed at eros. Donec vitae odio non
+                        mauris convallis congue. Quisque id rhoncus elit. Nam
+                        accumsan facilisis felis.
+                    </p>
+                </div>
+
+                <div class="operations__content operations__content--2">
+                    <div class="operations__icon operations__icon--2">
+                        <svg>
+                            <use xlink:href="img/icons.svg#icon-home"></use>
+                        </svg>
+                    </div>
+                    <h5 class="operations__header">
+                        Купите дом или воплотите свои мечты в реальность с
+                        помощью мгновенных кредитов.
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla et feugiat orci. Integer ut mauris nec sapien
+                        viverra condimentum sed at eros. Donec vitae odio non
+                        mauris convallis congue. Quisque id rhoncus elit. Nam
+                        accumsan facilisis felis.
+                    </p>
+                </div>
+                <div class="operations__content operations__content--3">
+                    <div class="operations__icon operations__icon--3">
+                        <svg>
+                            <use xlink:href="img/icons.svg#icon-user-x"></use>
+                        </svg>
+                    </div>
+                    <h5 class="operations__header">
+                        Ваша учетная запись больше не нужна? Без проблем!
+                        Мгновенно закройте её.
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla et feugiat orci. Integer ut mauris nec sapien
+                        viverra condimentum sed at eros. Donec vitae odio non
+                        mauris convallis congue. Quisque id rhoncus elit. Nam
+                        accumsan facilisis felis.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section--3">
+            <div class="section__title section__title--reviews">
+                <h2 class="section__description">Всё ещё не уверены?</h2>
+                <h3 class="section__header">
+                    Миллионы пользователей уже упрощают себе жизнь.
+                </h3>
+            </div>
+
+            <div class="slider">
+                <div class="slide slide--1">
+                    <div class="review">
+                        <h5 class="review__header">
+                            Лучшее финансовое решение!
+                        </h5>
+                        <blockquote class="review__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nulla et feugiat orci. Integer ut mauris nec
+                            sapien viverra condimentum sed at eros. Donec vitae
+                            odio non mauris convallis congue. Quisque id rhoncus
+                            elit. Nam accumsan facilisis felis.
+                        </blockquote>
+                        <address class="review__author">
+                            <img
+                                src="img/user-1.png"
+                                alt="Фото пользователя"
+                                class="review__photo"
+                            />
+                            <h6 class="review__name">Александра Мищенко</h6>
+                            <p class="review__location">Киев, Украина</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="slide slide--2">
+                    <div class="review">
+                        <h5 class="review__header">
+                            Последний шаг, чтобы полностью контролировать свои
+                            финансы
+                        </h5>
+                        <blockquote class="review__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nulla et feugiat orci. Integer ut mauris nec
+                            sapien viverra condimentum sed at eros. Donec vitae
+                            odio non mauris convallis congue. Quisque id rhoncus
+                            elit. Nam accumsan facilisis felis.
+                        </blockquote>
+                        <address class="review__author">
+                            <img
+                                src="img/user-2.png"
+                                alt="Фото пользователя"
+                                class="review__photo"
+                            />
+                            <h6 class="review__name">Рэй Уиллис</h6>
+                            <p class="review__location">Нью Йорк, USA</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="slide slide--3">
+                    <div class="review">
+                        <h5 class="review__header">
+                            Наконец-то свободен от высоких процентов на ипотеку
+                            в другом банке
+                        </h5>
+                        <blockquote class="review__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nulla et feugiat orci. Integer ut mauris nec
+                            sapien viverra condimentum sed at eros. Donec vitae
+                            odio non mauris convallis congue. Quisque id rhoncus
+                            elit. Nam accumsan facilisis felis.
+                        </blockquote>
+                        <address class="review__author">
+                            <img
+                                src="img/user-3.png"
+                                alt="Фото пользователя"
+                                class="review__photo"
+                            />
+                            <h6 class="review__name">Глеб Михайлов</h6>
+                            <p class="review__location">Москва, Россия</p>
+                        </address>
+                    </div>
+                </div>
+
+                <button class="slider__btn slider__btn--left">&larr;</button>
+                <button class="slider__btn slider__btn--right">&rarr;</button>
+                <div class="dots"></div>
+            </div>
+        </section>
+
+        <section class="section section--sign-up">
+            <div class="section__title">
+                <h3 class="section__header">
+                    Сейчас лучшее время стать клиентом нашего банка!
+                </h3>
+            </div>
+            <button class="btn btn--show-modal-window">
+                Откройте счёт сегодня!
+            </button>
+        </section>
+
+        <footer class="footer">
+            <ul class="footer__nav">
+                <li class="footer__item">
+                    <a class="footer__link" href="#">О Нас</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Расценки</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Правила Использования</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#"
+                        >Политика Конфиденциальности</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Карьера</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Блог</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Свяжитесь С Нами</a>
+                </li>
+            </ul>
+            <img src="img/logo.png" alt="Логотип банка" class="footer__logo" />
+            <p class="footer__copyright">
+                НЕ ТЕРЯЙ ВРЕМЯ И СТРОЙ СВОЕ БУДУЩЕЕ СЕЙЧАС
+            </p>
+            <p class="footer__copyright">
+                &copy;
+                <a
+                    class="footer__link masters-of-code-link"
+                    target="_blank"
+                    href="#"
+                    >Prosto Bank</a
+                >.
+            </p>
+        </footer>
+
+        <div class="modal-window hidden">
+            <button class="btn--close-modal-window">&times;</button>
+            <h2 class="modal__header">
+                Откройте банковский счёт <br />
+                за <span class="highlight">5 минут</span>
+            </h2>
+            <form class="modal__form">
+                <label>Имя</label>
+                <input type="text" />
+                <label>Фамилия</label>
+                <input type="text" />
+                <label>Email</label>
+                <input type="email" />
+                <button class="btn">Далее &rarr;</button>
+            </form>
+        </div>
+        <div class="overlay hidden"></div>
+    </body>
+</html>
